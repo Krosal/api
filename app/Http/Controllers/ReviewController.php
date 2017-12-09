@@ -16,7 +16,7 @@ class ReviewController extends Controller
      */
     public function index(Product $product)
     {
-        return ReviewResource::collective($product->reviews);
+        return ReviewResource::collection($product->reviews);
     }
 
     /**
